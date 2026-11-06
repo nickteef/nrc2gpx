@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nrc2gpx"
+dynamic = ["version"]
+description = "Export your Nike Run Club runs as GPX files."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Tilen Padovnik" }]
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28"]
+keywords = ["nike", "nike run club", "nrc", "gpx", "running", "export", "strava", "garmin"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+nrc2gpx = "nrc2gpx.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/nickteef/nrc2gpx"
+Issues = "https://github.com/nickteef/nrc2gpx/issues"
+
+[tool.setuptools]
+packages = ["nrc2gpx"]
+
+[tool.setuptools.dynamic]
+version = { attr = "nrc2gpx.__version__" }
