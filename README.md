@@ -12,15 +12,15 @@
 
 ## Features
 
-- 📋 **List** all your runs with date, distance, duration, pace and GPS availability
-- 📦 **Export** every run with GPS data to a separate `.gpx` file
-- 🕐 **Latest only**: export just your most recent run, or the last *N* runs
-- 📅 **Date range**: export runs between two dates
-- ☑️ **Interactive picker**: choose runs from a numbered list (`1,3,5-8`)
-- 🔎 **By ID**: export specific activities
-- ⏭️ **Incremental**: already exported runs are skipped, so you can re-run it any time
-- ⛰️ Includes **elevation** data when NRC recorded it
-- 🪶 One dependency (`requests`), works on Windows, macOS and Linux
+- **List** all your runs with date, distance, duration, pace and GPS availability
+- **Export** every run with GPS data to a separate `.gpx` file
+- **Latest only**: export just your most recent run, or the last *N* runs
+- **Date range**: export runs between two dates
+- **Interactive picker**: choose runs from a numbered list (`1,3,5-8`)
+- **By ID**: export specific activities
+- **Incremental**: already exported runs are skipped, so you can re-run it any time
+- Includes **elevation** data when NRC recorded it
+- One dependency (`requests`), works on Windows, macOS and Linux
 
 ## Requirements
 
